@@ -35,7 +35,10 @@ class Menu extends InputNumbers {
                    break;
 
                case '/':
-                   System.out.println(getNum1() / getNum2());
+                   if (getNum2() != 0)
+                    System.out.println(getNum1() / getNum2());
+                   else
+                       System.out.println("Don`t divide by zero !");
                    break;
 
                case '*':
